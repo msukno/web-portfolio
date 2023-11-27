@@ -1,0 +1,209 @@
+.backVid-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+.backVid-container video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.welcomeMsg_div{
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 11%;
+    padding-top: 2%;
+    /* animation-name: blurr-effect-anime;
+    animation-duration: 10s;
+    animation-fill-mode: forwards; */
+  }
+  
+  .welcomeMsg_div li{
+    /*color: rgba(12, 240, 156, 0.6);*/
+    color: rgba(254, 252, 252, 0.124);
+    opacity: 0.5;
+    border: none;
+    background: transparent;
+    font-size: 10vmin;
+  }
+  .welcomeMsg_div .letter{
+    padding: 0.1%;
+  }
+  .welcomeMsg_div .listSpaceItem{
+    padding: 2%;
+  }
+  .botMsg li{
+    margin-top: -2%;
+  }
+  
+  .welcomeMsg_div li.type1 {
+    animation-name: welcome_msg_anime;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  .welcomeMsg_div li.type2 {
+    animation-name: welcome_msg_anime;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  .welcomeMsg_div li.type3 {
+    animation-name: welcome_msg_anime;
+    animation-duration: 5.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .welcomeMsg_div li.activated{
+    animation-name: welcome_msg_change_color;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  .introduction_div{
+    margin-top: 3%;
+  }
+  .introduction{
+    border: transparent;
+    font-size: 2.3vmin;
+    padding-left: 2%;
+    padding-top: 2%;
+    color: rgba(245,255,181,0.8);
+    border-top: solid white;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-top-style: none;
+    border-top-color: rgba(217, 222, 144, 0.6);
+    border-top-width: 0.5vmin;
+  }
+  
+  .introduction.active{
+    animation-name: introBorder-slide-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  .wmAndIntroCol{
+    /*border: solid rgb(40, 27, 230);*/
+    padding: 0;
+  
+  }
+  .vidIntroCol{
+    /*border: solid rgb(196, 17, 212);*/
+    padding: 0;
+  
+  }
+  
+  .introVid_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialmedia-div{
+    padding-left: 10vmin;
+    padding-top: 2vmin;
+    border: solid red;
+  }
+  .fa {
+    padding:0.4vmin;
+    font-size: 3vmin;
+    width: 4.5vmin;
+    height: 4vmin;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.6vmin 0.4vmin;
+    border-radius: 50%;
+    visibility: hidden;
+  }
+  
+  .fa.activate{
+    animation-name: socialMedia-pop-up;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-gitlab {
+    background: #007bb5;
+    color: white;
+  }
+  
+  /*<======================animations======================>*/
+  
+  
+  
+  @keyframes welcome_msg_anime{
+    0%{transform: translate(20vmin, 20vmin) scale(0.2);
+       opacity: 0;
+    }
+    80%{
+      opacity: 0.5;
+      filter: blur(6px);
+    }
+    90%{
+      filter: blur(4px);
+    }
+    100%{
+      transform: translate(0px, 0px);
+      filter: blur(3px);
+    }
+  }
+  
+  @keyframes welcome_msg_change_color {
+    0%{
+      filter: blur(2px);
+    }
+  
+    80%{
+      font-size: 11vmin;
+      filter: blur(2px);
+      color: rgba(90, 124, 112, 0.5);
+    }
+    85%{
+      font-size: 11vmin;
+      filter: blur(2px);
+      color: rgba(77, 161, 130, 0.5);
+    }
+    
+    100%{
+      color: rgba(12, 240, 156, 0.7);
+      font-size: 10vmin;
+      filter: blur(0px);
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes introBorder-slide-in {
+    0%{
+      transform: translate(-70vw);
+    }
+  }
+  
+  @keyframes socialMedia-pop-up {
+    0%{transform: scale(0.01);opacity: 0;}
+    70%{transform: scale(1.15);opacity: 1;}
+    100%{transform: scale(1.0);opacity: 1;}
+  }
+  
+  /*===================================================*/

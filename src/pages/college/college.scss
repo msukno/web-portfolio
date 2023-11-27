@@ -1,0 +1,68 @@
+
+.college2{
+    height: 50vh;
+}
+  
+  .college2 .text{
+    padding: 0;
+    margin: 0;
+  }
+  .college2 .media{
+    padding-left: 7%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin: 0;
+    background-image: url("../../media/projector.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .college-bg{
+    position: fixed;
+    background-image: url("../../media/board.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .college-overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.312);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .college2 .img-zavrsni{
+    width: 85%;
+  }
+  .college2 .img-diplomski{
+    width: 85%;
+  }
+  
+  /* .college .image-div{
+    position: relative;
+    width: 50%;
+    color: white;
+    text-align: center;
+  }
+  */
+  .college2 .title{
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding-top: 5vmin;
+    padding-left: 12vmin;
+    font-size: 3vmin;
+    font-family: "Walter Turncoat", cursive;
+    text-shadow: 1px 1px white;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+  .college2 .story{
+    padding-top: 1vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    font-size: 2.3vmin;
+    color: rgb(255, 255, 255);
+    font-family: "Walter Turncoat", cursive;
+  }

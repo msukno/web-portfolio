@@ -1,0 +1,98 @@
+.about{
+    padding: 0;
+    margin: 0;
+    border: solid rgb(237, 23, 23);
+    display: flex;
+    flex-direction: column;
+    min-height: 86vh;
+  }
+  .about .overlay{
+    background-color: rgba(0, 0, 0, 0.347);
+  }
+  .about .text{
+    padding: 5vmin;
+    margin: 0;
+  }
+  .about .wall{
+    background-image: url("../../media/aboutBG-wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .about .textdiv{
+    border: inset rgb(0, 0, 0) 10px;
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    aspect-ratio: 2;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+  .textdiv::-webkit-scrollbar{
+    background-color: transparent;
+  }
+  .about .title{
+    padding-top: 5vmin;
+    padding-left: 12vmin;
+    font-size: 3vmin;
+    color: rgba(255, 255, 255, 0.992);
+    text-shadow: 5px 5px black;
+  }
+  .about .background{
+    padding-top: 1vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    font-size: 2.5vmin;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px black;
+    
+  }
+  
+  .about .media{
+    padding: 0;
+    margin: 0;
+    border: solid wheat;
+  }
+  
+  .about .image{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: solid wheat;
+    top: 0;
+  }
+  .about .floor{
+    background-image: url("../../media/floor2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    min-height: 20vh;
+  }
+  
+  
+  
+  .about .pom{
+    position: absolute;
+    top: 699.625px;
+    left: 909.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: red;
+    z-index: 2;
+  }
+  
+  .about .pom2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(13, 215, 9);
+    z-index: 2;
+  }
+  #person-fig{
+    border: solid blue;
+  }

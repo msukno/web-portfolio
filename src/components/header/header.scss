@@ -1,0 +1,121 @@
+.sticky-header{
+    /*border: solid blue;*/
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(20, 20, 20);
+    height: 15vmin;
+  }
+  
+  #activate-dropdown {
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  
+  .svgDropdownPanel{
+    /*border: solid red;*/
+    padding: 0;
+    background-color: gray;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  
+  :root {
+    --stroke-dasharray-path1: 110 110;
+    --stroke-dashoffset-start-path1: 88;
+    --stroke-dashoffset-end-path1: -20;
+    --translateY-path2: -0.6vh;
+  }
+
+  @media screen and (max-aspect-ratio: 1/1) {
+    :root {
+        --stroke-dasharray-path1: 40 40;
+        --stroke-dashoffset-start-path1: 32;
+        --stroke-dashoffset-end-path1: -10;
+        --translateY-path2: -0.44vh
+    }
+  }
+
+  @media screen and (min-aspect-ratio: 1/1) {
+    :root {
+        --stroke-dasharray-path1: 110 110;
+        --stroke-dashoffset-start-path1: 88;
+        --stroke-dashoffset-end-path1: -20;
+        --translateY-path2: -0.6vh;
+    }
+  }
+  
+  .drop_path1{
+    fill: none;
+    stroke-width: 0.26;
+    stroke: rgb(0, 255, 247);
+    stroke-opacity: 0.7;
+    stroke-dasharray: var(--stroke-dasharray-path1);
+    /*stroke-dashoffset: var(--stroke-dashoffset-start-path1);*/
+    animation-name: svg_path1_animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  
+  .drop_path2{
+    fill: none;
+    stroke-width: 0.3;
+    stroke: rgb(12, 240, 156);
+    stroke-opacity: 0.95;
+    visibility: hidden;
+  }
+  
+  .drop_path2.activated{
+    visibility: visible;
+    animation-name: svg_path2_animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+  }
+  
+  .drop_path3{
+    fill: none;
+    stroke-width: 0.26;
+    stroke: rgba(0, 0, 0);
+    stroke-opacity: 0;
+  }
+  
+  .drop_path3.activated{
+    stroke-opacity: 0.4;
+  }
+  
+  .drop_path4{
+    fill: none;
+    stroke-width: 0.26;
+    stroke: rgba(0, 0, 0);
+    stroke-opacity: 0.0;
+  }
+  
+  .drop_path4.activated{
+    stroke-opacity: 0.4;
+  }
+  
+  .activate-home-drop{
+    position: absolute;
+    border: none;
+    background: rgb(212, 17, 17, 0.5);
+  }
+
+
+@keyframes svg_path1_animation {
+    0%{stroke-dashoffset: var(--stroke-dashoffset-start-path1);}
+    100%{stroke-dashoffset: var(--stroke-dashoffset-end-path1);}
+}
+ 
+@keyframes svg_path2_animation {
+   0%{transform: translate(0px, var(--translateY-path2));}
+   100%{transform: translate(0px);}
+}
+  

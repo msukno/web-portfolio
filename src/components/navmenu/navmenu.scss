@@ -1,0 +1,198 @@
+
+
+.dropdown-nav-menu{
+    position: relative;
+    display: none;
+    /*border: solid black;*/
+    overflow: visible;
+    padding: 0;
+  }
+  
+  .navmenu{
+    visibility: hidden;
+  }
+  .navigation-menu {
+    display: none;
+    position: absolute;
+    /* border: solid whitesmoke; */
+    padding: 0;
+    background-color: rgb(20, 20, 20);
+  }
+  /* .content-test{
+    border: solid black;
+    padding-top: 20vh;
+  } */
+  
+  .navmenu-buttons{
+    border: solid red;
+    background-color: rgb(20, 20, 20);
+    padding: 0;
+    padding-left: 12%;
+  }
+  
+  .navmenu-buttons li{
+    border: none;
+    border-radius: 0 !important;
+    background-color: rgb(20, 20, 20);
+    padding: 0 !important;
+  }
+  
+  .navmenu-buttons .btn{
+    /* border: solid white; */
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 2vmin;
+  }
+  
+  .navmenu-buttons .btn:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .btn.activated{
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .project-grid-container{
+    /* border: solid white; */
+    padding: 0;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 5%;
+  }
+  .navmenu-content{
+    /* border: solid yellow; */
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .project-grid-container li{
+    background-color: transparent;
+    border: solid green;
+    border: none;
+    width: 30vmin;
+    border-radius: 2px !important;
+    border-width: 2px;
+    aspect-ratio: 1.0;
+    padding: 0 !important;
+    /* padding-left: 5% !important; */
+  }
+
+  .project-container .button{
+    border: outset rgb(23, 22, 22);
+    border-width: 0.25vmin;
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 1.0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  
+  .project-container .button:hover{
+    background-color: rgba(192, 192, 192, 0.15);
+  }
+  
+  .projects-col1{
+    /* border: solid red; */
+    padding: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .projects-col2{
+    /* border: solid rgb(255, 8, 0); */
+    padding: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .project-container .title-container{
+    height: 30%;
+    overflow: hidden;
+  }
+
+  .project-container .image-container{
+    width: 100%;
+    /* border: solid red; */
+  }
+
+  .project-container .institution-container{
+    height: 25%;
+    overflow: hidden;
+    padding-top: 5%;
+  }
+
+  .navmenu-content .text{
+    color: white;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .project-container .title{
+        font-size: 2.5vw;
+    }
+    .project-container .institution{
+        font-size: 1.5vw;
+    }
+    .project-container .department{
+        font-size: 1.5vw;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .project-container .title{
+        font-size: 1.3vw;
+    }
+    .project-container .institution{
+        font-size: 0.8vw;
+    }
+    .project-container .department{
+        font-size: 0.8vw;
+    }
+  }
+
+
+  
+  
+//   .projects .title{
+//     text-align: center;
+//     padding-top: 1vh;
+//     color: rgb(238, 242, 171);
+//     margin-bottom: 5vmin;
+//     margin-top: 2vmin;
+//   }
+  
+//   .projects .text{
+//     font-size: 2vmin;
+//     color: rgba(215, 218, 167, 0.885);
+//     padding-left: 5vmin;
+//     padding-right: 5vmin;
+//     padding-bottom: 5vmin;
+//   }
+  
+//   .litter-detection-div .image-div{
+//     width: 70%;
+//     padding-left: 10%;
+//     color: white;
+//   }
+//   .litter-detection-div .video-div{
+//     width: 70%;
+//     padding-left: 10%;
+//     color: white;
+//   }
+//   #surface-det{
+//     width: 100%;
+//   }
+//   .litter-mapping-div .image-div{
+//     width: 80%;
+//     color: white;
+//   }
+//   .litter-mapping-div .video-div{
+//     width: 70%;
+//     color: white;
+//     border: solid white;
+//     font-size: large;
+//   }
+  
+//   .navmenu-content h5{
+//     color: white;
+//   }
