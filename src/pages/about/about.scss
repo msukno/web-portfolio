@@ -14,7 +14,7 @@
     margin: 0;
   }
   .about .wall{
-    background-image: url("../../media/aboutBG-wall.jpg");
+    background-image: url("../../multimedia/aboutBG-wall.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -32,13 +32,18 @@
   .textdiv::-webkit-scrollbar{
     background-color: transparent;
   }
+
   .about .title{
     padding-top: 5vmin;
     padding-left: 12vmin;
     font-size: 3vmin;
     color: rgba(255, 255, 255, 0.992);
     text-shadow: 5px 5px black;
+    font-family: 'Mukta', sans-serif;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Open+Sans&display=swap');
+
   .about .background{
     padding-top: 1vmin;
     padding-left: 5vmin;
@@ -46,15 +51,15 @@
     font-size: 2.5vmin;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px black;
-    
+    font-family: 'Mukta', sans-serif;
   }
-  
+
   .about .media{
     padding: 0;
     margin: 0;
     border: solid wheat;
   }
-  
+
   .about .image{
     position: relative;
     width: 100%;
@@ -63,7 +68,7 @@
     top: 0;
   }
   .about .floor{
-    background-image: url("../../media/floor2.png");
+    background-image: url("../../multimedia/floor2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -71,9 +76,7 @@
     flex-grow: 1;
     min-height: 20vh;
   }
-  
-  
-  
+
   .about .pom{
     position: absolute;
     top: 699.625px;
@@ -84,7 +87,7 @@
     background-color: red;
     z-index: 2;
   }
-  
+
   .about .pom2{
     position: absolute;
     width: 10px;

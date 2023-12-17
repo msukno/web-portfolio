@@ -1,8 +1,9 @@
 import { Button, Col, Container, Image, ListGroup, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import mappingImg from '../../media/mapping2trans.png';
-import rovImg from '../../media/rov2trans.png';
-import detectionImg2 from '../../media/detection2trans.png'
+import mappingImg from '../../multimedia/maplogo.png';
+import rovImg from '../../multimedia/rov2.png';
+import detectionImg2 from '../../multimedia/detlogo.png'
+import icon_portfolio from '../../multimedia/portfolio_icon.png'
 
 const Project = ({data}) => {
     return (  
@@ -32,8 +33,8 @@ const ProjectsOverview = () => {
                         "institution":"University of Dubrovnik", "department":"LARIAT"};
     const project3Data = {"name":"rov-estimation", "title":"ROV 3D Position Estimation", "image":rovImg, 
                         "institution":"University of Dubrovnik", "department":"LARIAT"};
-    const project4Data = {"name":"test", "title":"test", "image":rovImg, 
-                        "institution":"test", "department":"test"};         
+    const project4Data = {"name":"webportfolio", "title":"Personal Web Portfolio", "image":icon_portfolio, 
+                        "institution":"", "department":"Personal project"};   
     return (
         <Container fluid className='project-grid-container'>
             <div className="navmenu-content">

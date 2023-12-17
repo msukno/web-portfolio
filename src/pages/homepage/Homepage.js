@@ -1,24 +1,20 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { NavLink } from 'react-bootstrap';
-import Welcome from './Welcome';
 import Intro from './Intro';
-import BackgroundVideo from '../../BackgroundVideo';
-import WelcomeMsg from '../../WelcomeMsg';
-import Introduction from '../../Introduction';
-import IntroVid from '../../IntroVid';
-import SocialMedia from '../../SocialMedia';
+import BackgroundVideo from './BackgroundVideo';
+import WelcomeMsg from './WelcomeMsg';
+import SocialMedia from './SocialMedia';
 
 function Homepage() {
   const welcomeMsgtext_top = "Welcome to My";
   const welcomeMsgtext_bottom= "Web Portfolio";
-  const introduction_text = `Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book. It has survived
-              not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.`
+  const introduction_text = `Hi, I'm Matija, a passionate coder with a love for sports. 
+  This portfolio is a showcase of my journey so far, where you'll find a detailed account 
+  of my previous projects and college experience. As you navigate through the pages, 
+  you'll get a glimpse into the work I've done and the knowledge I've gained along the way. 
+  My goal is to leverage these experiences as I pursue a future in the IT industry.
+  Thank you for visiting, and I hope you find inspiration in my work!`
               
               return (
                 <>
@@ -27,7 +23,7 @@ function Homepage() {
                     <Row>
                       <Col className="wmAndIntroCol" xxl={10}>
                         <WelcomeMsg message1={welcomeMsgtext_top} message2={welcomeMsgtext_bottom} />
-                        <Introduction text={introduction_text} />
+                        <Intro text={introduction_text} />
                         <SocialMedia />
                       </Col>
                       <Col className="vidIntroCol" xxl={2}>

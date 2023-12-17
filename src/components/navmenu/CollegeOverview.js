@@ -1,34 +1,32 @@
 import { Button, Image, Container, Row, Col, ListGroup} from 'react-bootstrap';
-import detectionImg from '../../media/detection.png';
+import logo from '../../multimedia/logo2.png';
 import { NavLink } from 'react-router-dom';
 
 const Thesis = ({data}) => {
-    return ( 
-        <div className={"project-container " + data["name"]}>
-            <NavLink to={data["name"]}>
-                <Button className="button">
-                    <h2 className="title">{data["title"]}</h2>
-                    {/* <div className="image-container">
-                        <Image className="image" src={data["image"]} fluid/>
-                    </div> */}
-                    <h3 className="institution">{data["institution"]}</h3>
-                    <h4 className="department">{data["department"]}</h4>
-                </Button>
-            </NavLink>
-            </div>
+    return (
+        <div className={"project-container " + data["name"] + " college-view"}>
+                <NavLink to={data["name"]}>
+                    <Button className="button">
+                        <div className="college-title-container">
+                            <h2 className="col-title">{data["title"]}</h2>
+                        </div>
+                        <div className="image-container">
+                            <Image className="image" src={data["image"]} fluid/>
+                        </div>
+                        <div className="college-institution-container">
+                            <h4 className="col-institution">{data["institution"]}</h4>
+                            <h4 className="col-department">{data["department"]}</h4>
+                        </div>
+                    </Button>
+                </NavLink>
+        </div>
     );
 }
 
 
 
 const CollegeOverview = () => {
-    const bachelorThesis = {"name":"litter-detection", "title":"Floating Litter Detection", "image":detectionImg, 
-                        "institution":"Faculty of Electrical Engineering and Computing", 
-                        "department":"LARIAT"};
-    const masterThesis = {"name":"litter-mapping", "title":"Floating Litter Mapping", "image":detectionImg, 
-                        "institution":"Faculty of Electrical Engineering and Computing", 
-                        "department":"LARIAT"};
-    const bachAndMaster = {"name":"college", "title":"Bachelor and Master Thesis", "image":detectionImg, 
+    const bachAndMaster = {"name":"college", "title":"Bachelor and Master Thesis", "image":logo, 
                         "institution":"University of Zagreb", 
                         "department":"Faculty of Electrical Engineering and Computing (FER)"};   
     return ( 

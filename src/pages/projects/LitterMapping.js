@@ -1,6 +1,6 @@
 import { Container, Row, Col, Image} from "react-bootstrap";
-import mappingImg from '../../media/mapping2trans.png'
-import mappingVid from "../../media/mappingVid.mp4"
+import mappingImg from '../../multimedia/mappingImg.png'
+import mappingVid from "../../multimedia/mappingVid.mp4"
 
 const LitterMapping = () => {
     return (
@@ -10,20 +10,20 @@ const LitterMapping = () => {
             <Row>
                 <Col className="text" xxl={7}>
                     <div className="content">
-                        <h3 className="title">Floating Litter Detection</h3>
+                        <h3 className="title">Floating Litter Mapping</h3>
                         <p className="story">
-                            This research received partial support from both the SeaClear and Innovamare 
-                            projects, and was conducted under the guidance and supervision of Ivana Palunko. 
-                            It addresses the problem of plastic pollution and proposes a cost-effective model 
-                            for floating litter detection at open sea and coastal areas using aerial imagery, 
-                            typically captured by a camera mounted on an Unmanned Aerial Vehicle (UAV).
-                            The dataset acquired during this project is publicly available. The research was published at IROS 2022, 
-                            Kyoto, Japan. For more details about the detection model and the acquired dataset, 
-                            please visit ieee.
+                        The project builds upon the Litter Detection project, leveraging a litter 
+                        detection model mounted on an Unmanned Aerial Vehicle (UAV) and its odometry 
+                        data to estimate the 3D coordinates of litter from 2D pixel coordinates. 
+                        Our approach integrates the litter detection model with inverse projection 
+                        and probabilistic occupancy grid mapping techniques to introduce a
+                        comprehensive framework for on-board litter localization and mapping. 
+                        As the work is still ongoing, detailed information regarding its progress 
+                        and outcomes is not yet available.
                         </p>
                     </div>
-                    <div className="img">
-                        <Image fluid className="fig" src={mappingImg}/>
+                    <div className="fig-container">
+                        <Image fluid className="figure" src={mappingImg}/>
                     </div>
                 </Col>
                 <Col className="media" xxl={5}>

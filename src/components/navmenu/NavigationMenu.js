@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Col, Container, Image, ListGroup, Row, Button } from "react-bootstrap";
+import {Container, ListGroup, Button } from "react-bootstrap";
 import ProjectsOverview from "./ProjectsOverview";
 import CollegeOverview from "./CollegeOverview";
 import { NavLink } from "react-router-dom";
-import AboutOverview from "./AboutOverview";
-import HomeOverview from "./HomeOverview";
+import NoOverview from "./NoOverview";
 
 const EmptyContent = () => {
     return (
@@ -14,10 +13,8 @@ const EmptyContent = () => {
 
 const NavigationMenu = () => {
 
-    const contentComponents = [<EmptyContent />, <ProjectsOverview/>,
-                                    <CollegeOverview />, <AboutOverview /> ,<HomeOverview />];
-    const [activeContentComponent, setContent] = useState(contentComponents[1]);
-    const navMenuItems = ["Home", "About", "College", "Projects"];
+    const [activeContentComponent, setContent] = useState(<EmptyContent />);
+    const navMenuItems = ["Home", "About", "College", "Projects", "Contact"];
     const activatedButtons = useRef([]);
 
     useEffect(() => {
@@ -29,7 +26,7 @@ const NavigationMenu = () => {
         const dropPath4 = document.getElementsByClassName("drop_path4")[0];
 
         const handleMouseLeave = (event) => {
-            setContent(contentComponents[0]);
+            setContent(<EmptyContent />);
             event.target.style["display"] = "none";
             dropPath3.classList.toggle("activated");
             dropPath4.classList.toggle("activated");
@@ -49,19 +46,21 @@ const NavigationMenu = () => {
             activatedButtons.current.push(element);
 
             if(element.id.includes("activate-drop")){
-                setContent(contentComponents[0]);
+                setContent(<EmptyContent />);
                 navMenu.style.display = "block";
             }else if(element.id.includes("projects")){
-                setContent(contentComponents[1]);
+                setContent(<ProjectsOverview />);
 
             }else if(element.id.includes("college")){
-                setContent(contentComponents[2]);
+                setContent(<CollegeOverview />);
             }else if(element.id.includes("about")){
-                setContent(contentComponents[3]);
+                setContent(<NoOverview message = {"Learn more about my background."} />);
             }else if(element.id.includes("home")){
-                setContent(contentComponents[4]);
+                setContent(<NoOverview message = {"To homepage."} />);
+            }else if(element.id.includes("contact")){
+                setContent(<NoOverview message = "msukno@gmail.com" />);
             }else{
-                setContent(contentComponents[0])
+                setContent(<EmptyContent />);
             }
         }
 
